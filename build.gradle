@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+group 'ru.netology'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+repositories {
+    mavenCentral()
+}
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.4.0'
+}
+test {
+    useJUnitPlatform()
+}
