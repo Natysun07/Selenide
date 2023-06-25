@@ -1,12 +1,12 @@
-image: Ubuntu 
+image: Ubuntu
 
-stack: jdk 11  
+stack: jdk 11
 
 branches:
   only:
-    - main  
+    - main
 
-build: off  
+build: off
 
 install:
 
@@ -15,4 +15,4 @@ install:
 
 build_script:
   - chmod +x gradlew
-  - ./gradlew test--info -Selenide.headless=true
+  - ./gradlew test --info -Dselenide.headless=true
